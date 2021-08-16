@@ -53,6 +53,19 @@ Para executar o projeto use o comando:
 ```
 yarn start ou npm start
 ```
+  
+  
+  ## ❌ Sugestão:
+  A API da HG Brasil possui algumas restrições de CORS, caso tenha problemas de visualização de dados na API em homologação use a extensão abaixo para contornar o erro:
+  
+  ```
+  [Moesif Origin & CORS Changer](https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc)
+  
+  ```
+  
+  Adendo que, isso é um erro com os headers da API vindas do back-end.
+  
+  
 
   ## 🤝 Tecnologias utilizadas:
   
