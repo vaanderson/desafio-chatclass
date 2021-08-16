@@ -9,6 +9,7 @@ border-radius: 5px;
 flex: 1;
 margin-left: 1rem;
 margin-top: 1rem;
+min-width: 150px;
 
 &:hover{
     background-color:#225dff;
