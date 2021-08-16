@@ -19,7 +19,7 @@ Para instalar o Aplicativo React, siga estas etapas:
 
 1: Acesso o site da HG Brasil e gere uma chave gratuita.
 ```
-<[HG Brasil](https://console.hgbrasil.com/)>
+[HG Brasil](https://console.hgbrasil.com/)
 ```
 
 2: Clone o repositório:
