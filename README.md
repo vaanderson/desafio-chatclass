@@ -55,7 +55,7 @@ yarn start ou npm start
 ```
   
   
-  ## ❌ Sugestão:
+  ## ❌ Caso haja restrições de CORS no Localhost:
   A API da HG Brasil possui algumas restrições de CORS, caso tenha problemas de visualização de dados na API em homologação use a extensão abaixo para contornar o erro:
   
   ```
