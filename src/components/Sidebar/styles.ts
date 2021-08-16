@@ -19,6 +19,7 @@ export const SidebarContent = styled.aside`
 
     @media (max-width: 1200px){
         min-height: 100%;
+        max-width: 100%;
     }
     &::before{
         content: "";
