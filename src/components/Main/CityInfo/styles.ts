@@ -25,7 +25,7 @@ export const WeekTemp = styled.div`
     width: 100%;
     padding-top:1rem;
 `
-export const CurrentTemp = styled.span`
+export const CurrentTemp = styled.h1`
     margin-top: 1rem;
 `
 
