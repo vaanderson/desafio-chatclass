@@ -21,6 +21,7 @@ export function CityInfo({cityName,index}: {cityName:{capital:string},index:numb
           api.get(`/weather?key=${process.env.REACT_APP_API_KEY}`, {
             params: {
               array_limit: 1,
+              format:`json-cors`,
               fields: `only_results,temp,city_name,
               forecast,max,min,date`,
               city_name: cityName.capital,

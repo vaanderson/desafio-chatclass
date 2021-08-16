@@ -39,6 +39,7 @@ export function Sidebar() {
     api.get(`/weather?key=${process.env.REACT_APP_API_KEY}`,{
       params: {
         array_limit: 5,
+        format:`json-cors`,
         user_ip: `remote`,
         locale: `pt`
       }
@@ -54,6 +55,7 @@ export function Sidebar() {
       api.get(`/weather?key=${process.env.REACT_APP_API_KEY}`,{
         params: {
           array_limit: 5,
+          format:`json-cors`,
           city_name: {city},
           locale: `pt`
         }
