@@ -54,4 +54,16 @@ Para executar o projeto use o comando:
 yarn start ou npm start
 ```
 
+  ## 🤝 Tecnologias utilizadas:
+  
+```
+  - Styled Components
+  - Axios
+  - ReactJS
+  - Typescript
+  
+```
+
+  
+  
 [⬆ Voltar ao topo](#)<br>
