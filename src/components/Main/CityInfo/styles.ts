@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Box = styled.div`
 text-align:center;
-border: 1px solid #100e3b;
+border: 1px solid #225dff;
 padding: 20px;
 border-radius: 5px;
 flex: 1;
@@ -11,7 +11,7 @@ margin-left: 1rem;
 margin-top: 1rem;
 
 &:hover{
-    background-color:#312e7a;
+    background-color:#225dff;
     color: #FFF;
 }
 `
@@ -24,6 +24,9 @@ export const WeekTemp = styled.div`
     justify-content: space-around;
     width: 100%;
     padding-top:1rem;
+`
+export const CurrentTemp = styled.span`
+    margin-top: 1rem;
 `
 
 export const SpanTemp = styled.span`

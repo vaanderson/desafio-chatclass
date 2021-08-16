@@ -4,7 +4,7 @@ import Pattern from "../../assets/pattern.png";
 export const SidebarContent = styled.aside`
      flex: 4;
 
-    background: #100E3B;
+    background: #225dff;
     color: #FFF;
 
     display: flex;

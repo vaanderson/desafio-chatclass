@@ -36,6 +36,7 @@ export function CityInfo({cityName,index}: {cityName:{capital:string},index:numb
             { city?
               <>
                 <M.SpanDay>{city.city_name}</M.SpanDay>
+                <M.CurrentTemp>{city.temp}</M.CurrentTemp>
                 <M.WeekTemp>
                 <M.SpanTemp><M.Bold>Min</M.Bold><M.Space />{city.forecast[0]?.min}°</M.SpanTemp>
                 <M.SpanTemp><M.Bold>Max</M.Bold><M.Space />{city.forecast[0]?.max}°</M.SpanTemp>
