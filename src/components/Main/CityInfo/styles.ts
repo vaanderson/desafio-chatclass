@@ -11,6 +11,10 @@ margin-left: 1rem;
 margin-top: 1rem;
 min-width: 150px;
 max-width: 150px;
+@media (max-width: 720px){
+    padding: 15px;
+    margin-left: 0.5rem;
+}
 
 &:hover{
     background-color:#225dff;

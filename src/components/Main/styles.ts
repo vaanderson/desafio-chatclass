@@ -6,6 +6,9 @@ export const Main = styled.main`
     display: flex;
     align-content:flex-start;
     flex-wrap:wrap;
+    @media (max-width: 720px){
+        padding: 45px 30px;
+    }
 `
 
 
