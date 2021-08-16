@@ -15,6 +15,8 @@ export const SidebarContent = styled.aside`
     min-height: 100vh;
     height: auto;
 
+    max-width: 500px;
+
     @media (max-width: 1200px){
         min-height: 100%;
     }
