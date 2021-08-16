@@ -14,6 +14,7 @@ max-width: 150px;
 @media (max-width: 720px){
     padding: 15px;
     margin-left: 0.5rem;
+    min-width: 125px;
 }
 
 &:hover{

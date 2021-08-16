@@ -96,6 +96,9 @@ export const BoxContainer = styled.div`
     flex-direction: row;
     flex-wrap:wrap;
     max-width: 80%;
+    @media (max-width: 720px){
+        max-width: 100%;
+    }
 `
 
 export const Box = styled.div`
@@ -106,6 +109,9 @@ export const Box = styled.div`
     min-width: 85px;
     margin-left: 1rem;
     margin-top: 1rem;
+    @media (max-width: 720px){
+        min-width: 75px;
+    }
 `
 
 export const WeekTemp = styled.div`
