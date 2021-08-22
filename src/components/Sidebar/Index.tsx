@@ -5,12 +5,14 @@ import { SearchInput } from './SearchInput/Search';
 import { Fragment, useEffect, useState } from 'react';
 import { api } from '../../services/api';
 
+
 interface Weather {
   results: string;
   temp: number;
   date: string;
   time: string;
   description: string;
+  condition_slug: string;
   city: string;
   forecast: [
     {
@@ -18,6 +20,7 @@ interface Weather {
       weekday: string;
       max: number,
       min: number,
+      condition: string;
     }
   ]
 }
@@ -27,6 +30,7 @@ interface forecast {
   weekday: string;
   max: number,
   min: number,
+  condition: string;
 }
 
 type forecastArray = Array<forecast>
@@ -35,6 +39,7 @@ export function Sidebar() {
   const [firtsCall, setFirtsCall] = useState<boolean>(false);
   const [weather, setWeather] = useState<Weather | null>(null);
   const [city, setCity] = useState<string>('')
+  const [Condition, setCondition] = useState<string>('');
   useEffect(() => {
     api.get(`/weather?key=${process.env.REACT_APP_API_KEY}`,{
       params: {
@@ -45,6 +50,7 @@ export function Sidebar() {
       }
     })
       .then(response => {
+        setCondition(response.data.results.condition_slug)
         setWeather(response.data.results)
       })
   }, []);
@@ -61,6 +67,7 @@ export function Sidebar() {
         }
       })
         .then(response => {
+          setCondition(response.data.results.condition_slug)
           setWeather(response.data.results)
         })
     } else {
@@ -75,8 +82,14 @@ export function Sidebar() {
         <S.Title>Previsão em tempo real:</S.Title>
 
         {
+          
+      
+
+
           weather &&
           <Fragment>
+
+           <S.IconView src={process.env.PUBLIC_URL + '/images/icons/' + Condition + '.svg'} />
             <S.Data><strong>Hoje,</strong> <br /> {weather.date} </S.Data>
             <S.TempCurrent>{weather.temp}</S.TempCurrent>
             <S.CityCurrent>{weather.city}</S.CityCurrent>
@@ -107,6 +120,8 @@ const createForecastElement = (forecastArray: forecastArray) => {
     return (
       <S.Box key={day.weekday} >
         <S.SpanDay>{day.weekday}</S.SpanDay>
+        <S.Space/>
+        <S.IconViewForecast src={process.env.PUBLIC_URL + '/images/icons/' + day.condition + '.svg'} />
         <S.WeekTemp>
           <S.SpanTemp><S.Bold>Min</S.Bold><S.Space />{day.min}°</S.SpanTemp>
           <S.SpanTemp><S.Bold>Max</S.Bold><S.Space />{day.max}°</S.SpanTemp>
@@ -116,3 +131,4 @@ const createForecastElement = (forecastArray: forecastArray) => {
   })
   return forecastElements
 }
+

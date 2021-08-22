@@ -58,7 +58,6 @@ export const Title = styled.h4`
 `
 export const Data = styled.p`
     text-align: center;
-    margin-top:5%;
     font-weight: 100;
 
 `
@@ -119,7 +118,6 @@ export const WeekTemp = styled.div`
     display: flex;
     justify-content: space-around;
     width: 100%;
-    padding-top:1rem;
 `
 
 export const Space = styled.br``
@@ -127,3 +125,17 @@ export const Space = styled.br``
 export const SpanDay = styled.span`
     font-weight: bold;
 `
+
+export const IconView = styled.img`
+    max-width: 130px;
+    width: 100%;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+`;
+
+export const IconViewForecast = styled.img`
+    margin-top: 0.3rem;
+    max-width: 50px;
+    width: 100%;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+`;
+
