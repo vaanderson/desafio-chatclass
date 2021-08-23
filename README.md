@@ -1,7 +1,7 @@
 # Desafio ChatClass
 
 
-<img src="https://i.imgur.com/a81RxBQ.png" alt="exemplo imagem">
+<img src="https://i.imgur.com/teYAGMn.png" alt="Weather Screen">
 
 > Vamos dar uma olhada na previsão do tempo? A meta do desafio é criarmos uma página simples, que consuma uma API de exibição climática.
 
